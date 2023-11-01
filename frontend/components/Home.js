@@ -1,13 +1,22 @@
 import { StatusBar } from "expo-status-bar";
-import { Button, Text, View } from "react-native";
+import { Button, Text, TextInput, View } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
-
+import tw from "twrnc";
 const Home = () => {
   return (
     <View>
-      <View style={{ backgroundColor: "blue", height: "100%", width: "100vw" ,display:'flex',borderCurve:'5px'}}>
+      <View>
         <View>
-          <Icon name="navicon" size={30} color="#900" />
+          <Icon
+            name="navicon"
+            size={25}
+            color="black"
+            style={{ display: "flex", justifyContent: "top" }}
+          />
+          <TextInput
+            placeholder="Search Here"
+            style={{ borderColor: "black" }}
+          ></TextInput>
         </View>
       </View>
     </View>
