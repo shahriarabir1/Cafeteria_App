@@ -1,12 +1,14 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TextInput } from "react-native";
 
 const SignUpScreen = () => {
   return (
     <View style={styles.container}>
       <Text>Registration</Text>
       <View>
-        <Text>sfsf</Text>
+        <View>
+          <TextInput placeholder="Enter Your Email" style={styles.input} />
+        </View>
       </View>
     </View>
   );
@@ -18,6 +20,10 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
+  },
+  input: {
+    borderBottom: "1px gray solid",
+    padding: 10,
   },
 });
 
